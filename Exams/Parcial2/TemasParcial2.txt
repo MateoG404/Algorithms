@@ -3,7 +3,7 @@ Temas parcial  2
 -> Arboles (X)
 -> Binary Search Tree (X)
 -> Arboles rojinegros
--> Heap & HeapSort
+-> Heap & HeapSort (X)
 -> Priority Queues
 -> QuickSort
 -> Counting Sort 
