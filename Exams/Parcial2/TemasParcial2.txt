@@ -1,0 +1,17 @@
+Temas parcial  2
+
+-> Arboles (X)
+-> Binary Search Tree (X)
+-> Arboles rojinegros
+-> Heap & HeapSort
+-> Priority Queues
+-> QuickSort
+-> Counting Sort 
+-> Radix Sort 
+-> Bucket Sort
+
+Páginas libro
+
+Sorting -> (pg 151 - pg 220)
+
+Data Structures -> (pg 232 - pg 323)
