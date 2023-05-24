@@ -2,7 +2,8 @@ def quick_sort(array, low, high):
   if low < high:
     # Dividir y acomodar pivote
     pi = partition(array, low, high)
-  
+    print(pi)
+
     quick_sort(array, low, pi - 1)
     quick_sort(array, pi + 1, high)
  
@@ -19,10 +20,11 @@ def partition(array, low, high):
       i = i + 1
       # Intercambiar elementos
       (array[i], array[j]) = (array[j], array[i])
-  
+      
   # Al final intercambiar el pivote
   (array[i + 1], array[high]) = (array[high], array[i + 1])
-  
+  print("*>",array)
+      
   # Regresa la posición final del pivote
   return i + 1
  
