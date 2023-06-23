@@ -1,0 +1,10 @@
+Grafos :
+	- BFS (Breadth-First Search)
+	- DFS (Depth-First Search)
+	- Ordenamiento topológico
+	- Componentes fuertemente conexas
+	- MST (Minimum Spanning Tree)
+	- SSSP (Single-Source Shortest Path)
+	- APSP (All-Pairs Shortest Path)
+	
+	
