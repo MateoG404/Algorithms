@@ -1,10 +1,10 @@
 Grafos :
-	- BFS (Breadth-First Search)
-	- DFS (Depth-First Search)
-	- Ordenamiento topológico
-	- Componentes fuertemente conexas
-	- MST (Minimum Spanning Tree)
-	- SSSP (Single-Source Shortest Path)
-	- APSP (All-Pairs Shortest Path)
+	- BFS (Breadth-First Search) (Cap1)
+	- DFS (Depth-First Search) (Cap1)
+	- Ordenamiento topológico (Cap1)
+	- Componentes fuertemente conexas (Cap1)
+	- MST (Minimum Spanning Tree) (Cap2)
+	- SSSP (Single-Source Shortest Path) (Cap3)
+	- APSP (All-Pairs Shortest Path) (Cap4)
 	
 	
