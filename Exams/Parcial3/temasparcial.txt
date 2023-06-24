@@ -1,5 +1,5 @@
 Grafos :
-	- BFS (Breadth-First Search) (Cap1)
+	- BFS (Breadth-First Search) (Cap1) (Learned )
 	- DFS (Depth-First Search) (Cap1)
 	- Ordenamiento topológico (Cap1)
 	- Componentes fuertemente conexas (Cap1)
