@@ -16,7 +16,7 @@ class Graph:
     def DFSUtil(self,v,visited):
             # Mark the current node as visited and print it
             visited[v]= True
-            print (v,end = " ")
+            print (mapeo2[v],end = " ")
             #Recur for all the vertices adjacent to this vertex
             for i in self.graph[v]:
                 if visited[i]==False:
@@ -78,13 +78,44 @@ class Graph:
                 gr.DFSUtil(i, visited)
                 print("")
 
+global mapeo2
+mapeo2 = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I', 9: 'J'}
+
 # Create a graph given in the above diagram
-g = Graph(5)
-g.addEdge(1, 0)
-g.addEdge(0, 2)
-g.addEdge(2, 1)
-g.addEdge(0, 3)
-g.addEdge(3, 4)
+g = Graph(10)
+
+letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+mapeo = {}
+
+for indice, letra in enumerate(letras):
+    mapeo[letra] = indice
+
+g.addEdge(mapeo['A'],mapeo['B'])
+g.addEdge(mapeo['A'],mapeo['C'])
+g.addEdge(mapeo['A'],mapeo['D'])
+g.addEdge(mapeo['B'],mapeo['E'])
+g.addEdge(mapeo['C'],mapeo['I'])
+g.addEdge(mapeo['D'],mapeo['B'])
+g.addEdge(mapeo['E'],mapeo['B'])
+g.addEdge(mapeo['E'],mapeo['G'])
+g.addEdge(mapeo['F'],mapeo['B'])
+g.addEdge(mapeo['F'],mapeo['D'])
+g.addEdge(mapeo['F'],mapeo['G'])
+g.addEdge(mapeo['G'],mapeo['D'])
+g.addEdge(mapeo['H'],mapeo['A'])
+g.addEdge(mapeo['H'],mapeo['B'])
+g.addEdge(mapeo['H'],mapeo['C'])
+g.addEdge(mapeo['H'],mapeo['I'])
+g.addEdge(mapeo['I'],mapeo['B'])
+g.addEdge(mapeo['I'],mapeo['E'])
+g.addEdge(mapeo['I'],mapeo['G'])
+g.addEdge(mapeo['J'],mapeo['C'])
+g.addEdge(mapeo['J'],mapeo['I'])
+g.addEdge(mapeo['J'],mapeo['G'])
+
+
+
+
 
 
 print ("Following are strongly connected components " +
