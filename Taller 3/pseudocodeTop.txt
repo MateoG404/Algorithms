@@ -1,0 +1,42 @@
+function distanciaEdicion(A, B):
+    n = longitud(A)
+    m = longitud(B)
+    memo = matriz de tamaño n+1 x m+1 inicializada con -1
+    return calcularDistancia(n, m, A, B, memo)
+
+function calcularDistancia(i, j, A, B, memo):
+    if memo[i][j] != -1:
+        return memo[i][j]
+        
+    if i == 0:
+        memo[i][j] = j
+        return j
+        
+    if j == 0:
+        memo[i][j] = i
+        return i
+        
+    if A[i] == B[j]:
+        memo[i][j] = calcularDistancia(i-1, j-1, A, B, memo)
+        return memo[i][j]
+        
+    insertar = 1 + calcularDistancia(i, j-1, A, B, memo)
+    borrar = 1 + calcularDistancia(i-1, j, A, B, memo)
+    reemplazar = 1 + calcularDistancia(i-1, j-1, A, B, memo)
+    
+    minimo = min(insertar, borrar, reemplazar)
+    memo[i][j] = minimo
+    
+    if minimo == insertar:
+        // Realizar la operación de inserción
+        // Agregar carácter B[j] a A
+        
+    else if minimo == borrar:
+        // Realizar la operación de borrado
+        // Eliminar carácter A[i]
+        
+    else:
+        // Realizar la operación de reemplazo
+        // Reemplazar carácter A[i] por B[j]
+    
+    return minimo

@@ -1,0 +1,52 @@
+function distanciaEdicion(A, B):
+    n = longitud(A)
+    m = longitud(B)
+    dp = matriz de tamaño (n+1) x (m+1)
+    
+    // Inicializar casos base
+    para i de 0 a n:
+        dp[i][0] = i
+        
+    para j de 0 a m:
+        dp[0][j] = j
+        
+    // Calcular distancias óptimas
+    para i de 1 a n:
+        para j de 1 a m:
+            si A[i] == B[j]:
+                dp[i][j] = dp[i-1][j-1]
+            sino:
+                insertar = 1 + dp[i][j-1]
+                borrar = 1 + dp[i-1][j]
+                reemplazar = 1 + dp[i-1][j-1]
+                dp[i][j] = min(insertar, borrar, reemplazar)
+    
+    // Reconstruir la solución
+    solucion = []
+    i = n
+    j = m
+    
+    mientras i > 0 o j > 0:
+        si A[i] == B[j]:
+            solucion.agregar("Mantener " + A[i])
+            i = i - 1
+            j = j - 1
+        sino:
+            actual = dp[i][j]
+            izquierda = dp[i][j-1]
+            arriba = dp[i-1][j]
+            diagonal = dp[i-1][j-1]
+            
+            si actual == diagonal + 1:
+                solucion.agregar("Reemplazar " + A[i] + " con " + B[j])
+                i = i - 1
+                j = j - 1
+            sino si actual == izquierda + 1:
+                solucion.agregar("Insertar " + B[j])
+                j = j - 1
+            sino si actual == arriba + 1:
+                solucion.agregar("Borrar " + A[i])
+                i = i - 1
+    
+    solucion.invertir()
+    retornar (dp[n][m], solucion)
