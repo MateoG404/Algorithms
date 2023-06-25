@@ -1,10 +1,9 @@
 Grafos :
 	- BFS (Breadth-First Search) (Cap1) (Learned )
-	- DFS (Depth-First Search) (Cap1)
-	- Ordenamiento topológico (Cap1)
-	- Componentes fuertemente conexas (Cap1)
-	- MST (Minimum Spanning Tree) (Cap2)
+	- DFS (Depth-First Search) (Cap1) (Learned)
+	- Ordenamiento topológico (Cap1) (Learned)
+	- Componentes fuertemente conexas (Cap1) 
+	- MST (Minimum Spanning Tree) (Cap2) 
 	- SSSP (Single-Source Shortest Path) (Cap3)
 	- APSP (All-Pairs Shortest Path) (Cap4)
-	
 	
